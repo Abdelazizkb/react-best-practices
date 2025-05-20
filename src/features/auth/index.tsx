@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "./login";
-import NoMatch from "../../layout/errors/no-match";
+import NoMatch from "layout/errors/no-match";
 
 const Router = () => {
   return (
