@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import NoMatch from "../layout/errors/no-match";
+import NoMatch from "layout/errors/no-match";
 
 const Auth = lazy(() => import("../features/auth"));
 
