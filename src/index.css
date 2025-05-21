@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,58 +19,232 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  /* typography */
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  --font-heading-1: 400 80px/80px "SF Pro Display", normal;
+  --font-heading-2: 400 60px/60px "SF Pro Display", normal;
+  --font-heading-3: 400 40px/44px "SF Pro Display", normal;
+  --font-heading-4: 400 30px/34px "SF Pro Display", normal;
+  --font-heading-5: 400 24px/28px "SF Pro Display", normal;
+  --font-heading-6: 400 20px/24px "SF Pro Display", normal;
+  --font-body: 400 16px/20px "SF Pro Display", normal;
+  --font-caption: 400 14px/22px "SF Pro Display", normal;
+  --font-small: 400 12px/18px "SF Pro Display", normal;
+  --font-tiny: 400 10px/16px "SF Pro Display", normal;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  --font-heading-bold-1: 700 80px/80px "SF Pro Display", normal;
+  --font-heading-bold-2: 700 60px/60px "SF Pro Display", normal;
+  --font-heading-bold-3: 700 40px/44px "SF Pro Display", normal;
+  --font-heading-bold-4: 700 30px/34px "SF Pro Display", normal;
+  --font-heading-bold-5: 700 24px/28px "SF Pro Display", normal;
+  --font-heading-bold-6: 700 20px/24px "SF Pro Display", normal;
+  --font-body-bold: 700 16px/20px "SF Pro Display", normal;
+  --font-caption-bold: 700 14px/22px "SF Pro Display", normal;
+  --font-small-bold: 700 12px/18px "SF Pro Display", normal;
+  --font-tiny-bold: 700 10px/16px "SF Pro Display", normal;
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  --font-heading-medium-1: 600 80px/80px "SF Pro Display", normal;
+  --font-heading-medium-2: 600 60px/60px "SF Pro Display", normal;
+  --font-heading-medium-3: 600 40px/44px "SF Pro Display", normal;
+  --font-heading-medium-4: 600 30px/34px "SF Pro Display", normal;
+  --font-heading-medium-5: 600 24px/28px "SF Pro Display", normal;
+  --font-heading-medium-6: 600 20px/24px "SF Pro Display", normal;
+  --font-body-medium: 600 16px/20px "SF Pro Display", normal;
+  --font-caption-medium: 600 14px/22px "SF Pro Display", normal;
+  --font-small-medium: 600 12px/18px "SF Pro Display", normal;
+  --font-tiny-medium: 600 10px/16px "SF Pro Display", normal;
 
-@media (prefers-color-scheme: light) {
+  --font-heading-thin-1: 300 80px/80px "SF Pro Display", normal;
+  --font-heading-thin-2: 300 60px/60px "SF Pro Display", normal;
+  --font-heading-thin-3: 300 40px/44px "SF Pro Display", normal;
+  --font-heading-thin-4: 300 30px/34px "SF Pro Display", normal;
+  --font-heading-thin-5: 300 24px/28px "SF Pro Display", normal;
+  --font-heading-thin-6: 300 20px/24px "SF Pro Display", normal;
+  --font-body-thin: 300 16px/20px "SF Pro Display", normal;
+  --font-caption-thin: 300 14px/22px "SF Pro Display", normal;
+  --font-small-thin: 300 12px/18px "SF Pro Display", normal;
+  --font-tiny-thin: 300 10px/16px "SF Pro Display", normal;
+
+  /* colors */
+
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    /* Blue */
+    --blue-100: #dbe5f8;
+    --blue-200: #a1beed;
+    --blue-300: #5c99e3;
+    --blue-400: #4373ae;
+    --blue-500: #2d507b;
+    --blue-600: #182f4b;
+    --blue-700: #06111f;
+
+    /* Indigo */
+    --indigo-100: #e3e8f8;
+    --indigo-200: #afc0ed;
+    --indigo-300: #7899e2;
+    --indigo-400: #4a74c1;
+    --indigo-500: #33528a;
+    --indigo-600: #1d3157;
+    --indigo-700: #091428;
+
+    /* Sky */
+    --sky-100: #ecf1fd;
+    --sky-200: #c1d3fa;
+    --sky-300: #81acf6;
+    --sky-400: #3687e4;
+    --sky-500: #2663aa;
+    --sky-600: #164173;
+    --sky-700: #082240;
+
+    /* Bright */
+    --bright-100: #ecf1ff;
+    --bright-200: #c1d2ff;
+    --bright-300: #80abff;
+    --bright-400: #0085fb;
+    --bright-500: #0061bb;
+    --bright-600: #00407e;
+    --bright-700: #002147;
+
+    /* Steel */
+    --steel-100: #dee6f8;
+    --steel-200: #a6beee;
+    --steel-300: #6798e4;
+    --steel-400: #4373b6;
+    --steel-500: #2d5181;
+    --steel-600: #193050;
+    --steel-700: #071222;
+
+    /* Gray */
+    --gray-100: #e3e5e7;
+    --gray-200: #b8bdc2;
+    --gray-300: #92979c;
+    --gray-400: #6e7276;
+    --gray-500: #4c4f52;
+    --gray-600: #2d2f31;
+    --gray-700: #101112;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+.heading-1 {
+  font: 400 80px/80px "SF Pro Display", normal;
+}
+.heading-2 {
+  font: 400 60px/60px "SF Pro Display", normal;
+}
+.heading-3 {
+  font: 400 40px/44px "SF Pro Display", normal;
+}
+.heading-4 {
+  font: 400 30px/34px "SF Pro Display", normal;
+}
+.heading-5 {
+  font: 400 24px/28px "SF Pro Display", normal;
+}
+.heading-6 {
+  font: 400 20px/24px "SF Pro Display", normal;
+}
+.body {
+  font: 400 16px/20px "SF Pro Display", normal;
+}
+.caption {
+  font: 400 14px/22px "SF Pro Display", normal;
+}
+.small {
+  font: 400 12px/18px "SF Pro Display", normal;
+}
+.tiny {
+  font: 400 10px/16px "SF Pro Display", normal;
+}
+
+.heading-bold-1 {
+  font: 700 80px/80px "SF Pro Display", normal;
+}
+.heading-bold-2 {
+  font: 700 60px/60px "SF Pro Display", normal;
+}
+.heading-bold-3 {
+  font: 700 40px/44px "SF Pro Display", normal;
+}
+.heading-bold-4 {
+  font: 700 30px/34px "SF Pro Display", normal;
+}
+.heading-bold-5 {
+  font: 700 24px/28px "SF Pro Display", normal;
+}
+.heading-bold-6 {
+  font: 700 20px/24px "SF Pro Display", normal;
+}
+.body-bold {
+  font: 700 16px/20px "SF Pro Display", normal;
+}
+.caption-bold {
+  font: 700 14px/22px "SF Pro Display", normal;
+}
+.small-bold {
+  font: 700 12px/18px "SF Pro Display", normal;
+}
+.tiny-bold {
+  font: 700 10px/16px "SF Pro Display", normal;
+}
+
+.heading-medium-1 {
+  font: 600 80px/80px "SF Pro Display", normal;
+}
+.heading-medium-2 {
+  font: 600 60px/60px "SF Pro Display", normal;
+}
+.heading-medium-3 {
+  font: 600 40px/44px "SF Pro Display", normal;
+}
+.heading-medium-4 {
+  font: 600 30px/34px "SF Pro Display", normal;
+}
+.heading-medium-5 {
+  font: 600 24px/28px "SF Pro Display", normal;
+}
+.heading-medium-6 {
+  font: 600 20px/24px "SF Pro Display", normal;
+}
+.body-medium {
+  font: 600 16px/20px "SF Pro Display", normal;
+}
+.caption-medium {
+  font: 600 14px/22px "SF Pro Display", normal;
+}
+.small-medium {
+  font: 600 12px/18px "SF Pro Display", normal;
+}
+.tiny-medium {
+  font: 600 10px/16px "SF Pro Display", normal;
+}
+
+.heading-thin-1 {
+  font: 300 80px/80px "SF Pro Display", normal;
+}
+.heading-thin-2 {
+  font: 300 60px/60px "SF Pro Display", normal;
+}
+.heading-thin-3 {
+  font: 300 40px/44px "SF Pro Display", normal;
+}
+.heading-thin-4 {
+  font: 300 30px/34px "SF Pro Display", normal;
+}
+.heading-thin-5 {
+  font: 300 24px/28px "SF Pro Display", normal;
+}
+.heading-thin-6 {
+  font: 300 20px/24px "SF Pro Display", normal;
+}
+.body-thin {
+  font: 300 16px/20px "SF Pro Display", normal;
+}
+.caption-thin {
+  font: 300 14px/22px "SF Pro Display", normal;
+}
+.small-thin {
+  font: 300 12px/18px "SF Pro Display", normal;
+}
+.tiny-thin {
+  font: 300 10px/16px "SF Pro Display", normal;
 }
