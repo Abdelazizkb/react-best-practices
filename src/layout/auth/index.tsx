@@ -13,7 +13,7 @@ const AuthLayout: React.FC<PropsWithChildren> = ({ children }) => {
         <div>
           <Suspense fallback={<Loader />}>
             <div className={styles.Content}>
-              <Logo />
+              <Logo className={styles.logo} />
               {children}
             </div>
           </Suspense>

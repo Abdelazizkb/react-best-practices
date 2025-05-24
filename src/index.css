@@ -1,3 +1,6 @@
+@import-normalize;
+/* bring in normalize.css styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -63,61 +66,59 @@ body {
 
   /* colors */
 
-  :root {
-    /* Blue */
-    --blue-100: #dbe5f8;
-    --blue-200: #a1beed;
-    --blue-300: #5c99e3;
-    --blue-400: #4373ae;
-    --blue-500: #2d507b;
-    --blue-600: #182f4b;
-    --blue-700: #06111f;
+  /* Blue */
+  --blue-100: #dbe5f8;
+  --blue-200: #a1beed;
+  --blue-300: #5c99e3;
+  --blue-400: #4373ae;
+  --blue-500: #2d507b;
+  --blue-600: #182f4b;
+  --blue-700: #06111f;
 
-    /* Indigo */
-    --indigo-100: #e3e8f8;
-    --indigo-200: #afc0ed;
-    --indigo-300: #7899e2;
-    --indigo-400: #4a74c1;
-    --indigo-500: #33528a;
-    --indigo-600: #1d3157;
-    --indigo-700: #091428;
+  /* Indigo */
+  --indigo-100: #e3e8f8;
+  --indigo-200: #afc0ed;
+  --indigo-300: #7899e2;
+  --indigo-400: #4a74c1;
+  --indigo-500: #33528a;
+  --indigo-600: #1d3157;
+  --indigo-700: #091428;
 
-    /* Sky */
-    --sky-100: #ecf1fd;
-    --sky-200: #c1d3fa;
-    --sky-300: #81acf6;
-    --sky-400: #3687e4;
-    --sky-500: #2663aa;
-    --sky-600: #164173;
-    --sky-700: #082240;
+  /* Sky */
+  --sky-100: #ecf1fd;
+  --sky-200: #c1d3fa;
+  --sky-300: #81acf6;
+  --sky-400: #3687e4;
+  --sky-500: #2663aa;
+  --sky-600: #164173;
+  --sky-700: #082240;
 
-    /* Bright */
-    --bright-100: #ecf1ff;
-    --bright-200: #c1d2ff;
-    --bright-300: #80abff;
-    --bright-400: #0085fb;
-    --bright-500: #0061bb;
-    --bright-600: #00407e;
-    --bright-700: #002147;
+  /* Bright */
+  --bright-100: #ecf1ff;
+  --bright-200: #c1d2ff;
+  --bright-300: #80abff;
+  --bright-400: #0085fb;
+  --bright-500: #0061bb;
+  --bright-600: #00407e;
+  --bright-700: #002147;
 
-    /* Steel */
-    --steel-100: #dee6f8;
-    --steel-200: #a6beee;
-    --steel-300: #6798e4;
-    --steel-400: #4373b6;
-    --steel-500: #2d5181;
-    --steel-600: #193050;
-    --steel-700: #071222;
+  /* Steel */
+  --steel-100: #dee6f8;
+  --steel-200: #a6beee;
+  --steel-300: #6798e4;
+  --steel-400: #4373b6;
+  --steel-500: #2d5181;
+  --steel-600: #193050;
+  --steel-700: #071222;
 
-    /* Gray */
-    --gray-100: #e3e5e7;
-    --gray-200: #b8bdc2;
-    --gray-300: #92979c;
-    --gray-400: #6e7276;
-    --gray-500: #4c4f52;
-    --gray-600: #2d2f31;
-    --gray-700: #101112;
-  }
+  /* Gray */
+  --gray-100: #e3e5e7;
+  --gray-200: #b8bdc2;
+  --gray-300: #92979c;
+  --gray-400: #6e7276;
+  --gray-500: #4c4f52;
+  --gray-600: #2d2f31;
+  --gray-700: #101112;
 
   /* Spacing & Sizing Scale (in rem) */
   --size-0: 0rem;

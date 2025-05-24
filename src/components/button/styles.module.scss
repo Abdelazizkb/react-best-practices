@@ -1,0 +1,61 @@
+.button {
+  outline: none;
+  margin: var(--size-1) 0;
+
+  cursor: pointer;
+  height: var(--size-10);
+  border-radius: var(--size-1);
+
+  font: var(--font-caption-medium);
+
+  &--color-primary {
+    --main-color: var(--gray-600);
+  }
+
+  &--variant-default {
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+
+    svg:not([fill]) {
+      fill: white;
+    }
+    .loader {
+      .spinner > div {
+        background-color: red;
+      }
+    }
+  }
+
+  &--variant-outlined {
+    border: solid 1px var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+    svg:not([fill]) {
+      fill: var(--main-color);
+    }
+    .loader {
+      .spinner > div {
+        background-color: red;
+      }
+    }
+  }
+
+  &--variant-link {
+    border: none;
+    background-color: transparent;
+    color: var(--main-color);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--size-stretch {
+    width: 100%;
+  }
+
+  &--disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}

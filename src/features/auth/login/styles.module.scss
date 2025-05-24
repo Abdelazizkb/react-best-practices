@@ -1,0 +1,12 @@
+.loginPage {
+  .header {
+    padding: var(--size-10) 0;
+    > p:first-child {
+      margin-bottom: var(--size-2);
+    }
+  }
+  .buttonsDivider {
+    width: 100%;
+    text-align: center;
+  }
+}
