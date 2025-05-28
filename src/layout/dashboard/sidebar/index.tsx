@@ -1,6 +1,12 @@
 import DashboardIcon from "assets/icons/dashboard.svg?react";
 import SettingsIcon from "assets/icons/settings.svg?react";
-import iconUser from "assets/user.png";
+import TrialIcon from "assets/icons/trial.svg?react";
+import SubscriptionIcon from "assets/icons/subscription.svg?react";
+import TaskIcon from "assets/icons/task.svg?react";
+import NoteIcon from "assets/icons/note.svg?react";
+import StarredIcon from "assets/icons/starred.svg?react";
+import TrashIcon from "assets/icons/trash.svg?react";
+import HelpIcon from "assets/icons/help.svg?react";
 
 import styles from "./styles.module.scss";
 import classNames from "classnames";
@@ -36,7 +42,7 @@ const pages: { name: string; group: IGroup }[] = [
       {
         name: "subscription",
         title: "Subscription",
-        icon: <DashboardIcon />,
+        icon: <SubscriptionIcon />,
       },
     ],
   },
@@ -46,17 +52,17 @@ const pages: { name: string; group: IGroup }[] = [
       {
         name: "all",
         title: "All",
-        icon: <DashboardIcon />,
+        icon: <TaskIcon />,
       },
       {
         name: "starred",
         title: "Starred",
-        icon: <DashboardIcon />,
+        icon: <StarredIcon />,
       },
       {
         name: "trash",
         title: "Trash",
-        icon: <DashboardIcon />,
+        icon: <TrashIcon />,
       },
     ],
   },
@@ -66,17 +72,17 @@ const pages: { name: string; group: IGroup }[] = [
       {
         name: "all",
         title: "All",
-        icon: <DashboardIcon />,
+        icon: <NoteIcon />,
       },
       {
         name: "starred",
         title: "Starred",
-        icon: <DashboardIcon />,
+        icon: <StarredIcon />,
       },
       {
         name: "trash",
         title: "Trash",
-        icon: <DashboardIcon />,
+        icon: <TrashIcon />,
       },
     ],
   },
@@ -91,7 +97,7 @@ const pages: { name: string; group: IGroup }[] = [
       {
         name: "help",
         title: "Help",
-        icon: <SettingsIcon />,
+        icon: <HelpIcon />,
       },
     ],
   },
@@ -127,14 +133,16 @@ const Sidebar: React.FC<PropsWithChildren<{ currentLink: ILink }>> = ({
         <div className={styles.footer}>
           <div className={styles.subscription}>
             <div>
-              <img src={iconUser} alt="iconUser.png" />
+              <TrialIcon />
               <div>
                 <p>Current plan:</p>
                 <p>Pro trial</p>
               </div>
             </div>
             <p>Upgrade to pro to get the latest and exclusive element</p>
-            <Button size="stretch">Upgrade to PRO</Button>
+            <Button color="sky" size="stretch">
+              Upgrade to PRO
+            </Button>
           </div>
         </div>
       </div>
