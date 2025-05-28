@@ -1,15 +1,31 @@
 .button {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2);
+
   outline: none;
   margin: var(--size-1) 0;
 
   cursor: pointer;
-  height: var(--size-10);
-  border-radius: var(--size-1);
+  height: var(--size-9);
+  border-radius: var(--size-0-5);
 
-  font: var(--font-caption-medium);
+  font: var(--font-body-medium);
 
   &--color-primary {
     --main-color: var(--gray-600);
+  }
+
+  &--color-blue {
+    --main-color: var(--blue-400);
+  }
+
+  &--color-sky {
+    --main-color: var(--sky-400);
+  }
+
+  svg {
+    height: var(--size-6);
   }
 
   &--variant-default {
@@ -45,9 +61,20 @@
     border: none;
     background-color: transparent;
     color: var(--main-color);
+    > svg:not([fill]) {
+      fill: var(--main-color);
+    }
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &:hover {
+    filter: brightness(97%);
+  }
+
+  &--size-default {
+    padding: 0 var(--size-3);
   }
 
   &--size-stretch {

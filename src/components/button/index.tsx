@@ -6,17 +6,18 @@ import Loader from "components/loaders";
 interface Props
   extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "size"> {
   variant?: "default" | "link" | "outlined";
-  size?: "default" | "large" | "small" | "stretch";
+  size?: "default" | "stretch";
   color?: "primary" | "blue" | "sky";
   disabled?: boolean;
   loading?: boolean;
+  startIcon?: ReactNode;
   children?: ReactNode;
 }
 
 const colors = {
   primary: "var(--gray-600)",
-  blue: "var(--blue-600)",
-  sky: "var(--sky-600)",
+  blue: "var(--blue-400)",
+  sky: "var(--sky-400)",
 };
 
 const Button: React.FC<Props> = ({
@@ -25,6 +26,7 @@ const Button: React.FC<Props> = ({
   size = "default",
   disabled = false,
   loading = false,
+  startIcon,
   children,
   ...props
 }) => {
@@ -41,7 +43,10 @@ const Button: React.FC<Props> = ({
       {loading ? (
         <Loader color={variant === "default" ? "white" : colors[color]} />
       ) : (
-        children
+        <>
+          {startIcon && startIcon}
+          <span>{children}</span>
+        </>
       )}
     </button>
   );

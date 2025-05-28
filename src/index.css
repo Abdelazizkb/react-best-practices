@@ -111,6 +111,9 @@ body {
   --steel-600: #193050;
   --steel-700: #071222;
 
+  --color-layout-main: #f5f3eb;
+  --color-layout-border: #ebebeb;
+
   /* Gray */
   --gray-100: #e3e5e7;
   --gray-200: #b8bdc2;
