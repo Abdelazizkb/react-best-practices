@@ -12,8 +12,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "apexcharts": "^4.7.0",
     "classnames": "^2.5.1",
     "react": "^19.1.0",
+    "react-apexcharts": "^1.7.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",
     "sass": "^1.89.0",
