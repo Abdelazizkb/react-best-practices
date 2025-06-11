@@ -1,0 +1,372 @@
+[
+  {
+    "id": "4e381aa6-1c30-4472-a012-9d38f062e42c",
+    "title": "Fix login bug",
+    "status": "draft",
+    "reminder": "2025-06-12T18:35:40.236067Z",
+    "due_date": "2025-06-16T18:35:40.236067Z",
+    "Repeat": "daily",
+    "note": "Investigate and fix the issue preventing users from logging in.",
+    "updated_at": "2025-06-15T14:35:40.236067Z"
+  },
+  {
+    "id": "1e86d6d9-699e-4d35-a359-ac67c5c3c207",
+    "title": "Implement user authentication",
+    "status": "in progress",
+    "reminder": "2025-06-13T19:35:40.236533Z",
+    "due_date": "2025-06-20T19:35:40.236533Z",
+    "Repeat": "monthly",
+    "note": "Set up JWT-based login and refresh token handling.",
+    "updated_at": "2025-06-18T16:35:40.236533Z"
+  },
+  {
+    "id": "7a689381-78d4-4cc8-8a60-a4b66f26fc0c",
+    "title": "Code review for PR #42",
+    "status": "done",
+    "reminder": "2025-06-15T07:35:40.237293Z",
+    "due_date": "2025-06-16T07:35:40.237293Z",
+    "Repeat": "yearly",
+    "note": "Review the new feature branch for merging.",
+    "updated_at": "2025-06-14T04:35:40.237293Z"
+  },
+  {
+    "id": "9c3a9c35-d84b-479a-999a-8710b17d805a",
+    "title": "Update README",
+    "status": "done",
+    "reminder": "2025-06-12T18:35:40.237530Z",
+    "due_date": "2025-06-17T18:35:40.237530Z",
+    "Repeat": "daily",
+    "note": "Add detailed setup instructions and environment info.",
+    "updated_at": "2025-06-15T18:35:40.237530Z"
+  },
+  {
+    "id": "9bea03bd-1d81-4d40-afd5-512533792a7b",
+    "title": "Refactor sidebar component",
+    "status": "in progress",
+    "reminder": "2025-06-14T23:35:40.237666Z",
+    "due_date": "2025-06-15T23:35:40.237666Z",
+    "Repeat": "yearly",
+    "note": "Simplify logic and split into smaller subcomponents.",
+    "updated_at": "2025-06-13T13:35:40.237666Z"
+  },
+  {
+    "id": "ee66d67b-ae8c-423f-97ab-b0ba050dd69a",
+    "title": "Write unit tests for auth utils",
+    "status": "done",
+    "reminder": "2025-06-14T20:35:40.237807Z",
+    "due_date": "2025-06-17T20:35:40.237807Z",
+    "Repeat": "daily",
+    "note": "Increase test coverage for login and token management.",
+    "updated_at": "2025-06-17T15:35:40.237807Z"
+  },
+  {
+    "id": "137f5220-d69d-44e8-b52e-fa45ca5fed25",
+    "title": "Integrate Stripe API",
+    "status": "draft",
+    "reminder": "2025-06-12T19:35:40.237923Z",
+    "due_date": "2025-06-18T19:35:40.237923Z",
+    "Repeat": "monthly",
+    "note": "Connect frontend with backend for payment processing.",
+    "updated_at": "2025-06-16T12:35:40.237923Z"
+  },
+  {
+    "id": "f9fa5df3-6f75-4b17-8f80-6b286f240ee3",
+    "title": "Optimize image loading",
+    "status": "in progress",
+    "reminder": "2025-06-13T19:35:40.238058Z",
+    "due_date": "2025-06-18T19:35:40.238058Z",
+    "Repeat": "weekly",
+    "note": "Use lazy loading and compressed image formats.",
+    "updated_at": "2025-06-17T21:35:40.238058Z"
+  },
+  {
+    "id": "1d155e4b-9537-4a57-85c3-1f745c97115e",
+    "title": "Deploy staging build",
+    "status": "draft",
+    "reminder": "2025-06-12T21:35:40.238218Z",
+    "due_date": "2025-06-13T21:35:40.238218Z",
+    "Repeat": "monthly",
+    "note": "Ensure environment variables are set and push to staging.",
+    "updated_at": "2025-06-11T22:35:40.238218Z"
+  },
+  {
+    "id": "064abb26-d4a7-42f7-92f3-8ed11c11627f",
+    "title": "Fix responsive issues on mobile",
+    "status": "in progress",
+    "reminder": "2025-06-15T01:35:40.238630Z",
+    "due_date": "2025-06-19T01:35:40.238630Z",
+    "Repeat": "yearly",
+    "note": "Resolve layout bugs for screens < 768px.",
+    "updated_at": "2025-06-18T14:35:40.238630Z"
+  },
+  {
+    "id": "f7f07a7e-860b-4131-9158-5f0697ee22a4",
+    "title": "Update API schema",
+    "status": "done",
+    "reminder": "2025-06-13T04:35:40.238717Z",
+    "due_date": "2025-06-17T04:35:40.238717Z",
+    "Repeat": "weekly",
+    "note": "Reflect the latest changes to backend models.",
+    "updated_at": "2025-06-16T01:35:40.238717Z"
+  },
+  {
+    "id": "ec4494fa-9ae8-4840-9dcc-ea9ed6b0ebf9",
+    "title": "Test app on Safari",
+    "status": "in progress",
+    "reminder": "2025-06-13T03:35:40.239001Z",
+    "due_date": "2025-06-20T03:35:40.239001Z",
+    "Repeat": "yearly",
+    "note": "Ensure all UI interactions work on iOS/Safari.",
+    "updated_at": "2025-06-19T03:35:40.239001Z"
+  },
+  {
+    "id": "a58baa06-e161-43ea-a168-daf9298b0d0c",
+    "title": "Set up ESLint and Prettier",
+    "status": "in progress",
+    "reminder": "2025-06-14T12:35:40.239189Z",
+    "due_date": "2025-06-19T12:35:40.239189Z",
+    "Repeat": "weekly",
+    "note": "Add config files and enforce formatting rules.",
+    "updated_at": "2025-06-16T13:35:40.239189Z"
+  },
+  {
+    "id": "dbda83f4-7285-4333-a22a-05144a79dc4a",
+    "title": "Add 404 and 500 error pages",
+    "status": "in progress",
+    "reminder": "2025-06-13T16:35:40.239360Z",
+    "due_date": "2025-06-19T16:35:40.239360Z",
+    "Repeat": "yearly",
+    "note": "Improve user experience for broken links.",
+    "updated_at": "2025-06-17T11:35:40.239360Z"
+  },
+  {
+    "id": "c55a648f-6e31-474c-a1df-7e6fa087f336",
+    "title": "Implement dark mode toggle",
+    "status": "draft",
+    "reminder": "2025-06-13T04:35:40.239440Z",
+    "due_date": "2025-06-17T04:35:40.239440Z",
+    "Repeat": "monthly",
+    "note": "Allow users to switch themes manually.",
+    "updated_at": "2025-06-15T17:35:40.239440Z"
+  },
+  {
+    "id": "b5dfc52b-b61a-4b49-841c-d859c57bce9b",
+    "title": "Write documentation for API",
+    "status": "in progress",
+    "reminder": "2025-06-15T02:35:40.239500Z",
+    "due_date": "2025-06-20T02:35:40.239500Z",
+    "Repeat": "yearly",
+    "note": "Cover all endpoints with examples.",
+    "updated_at": "2025-06-18T10:35:40.239500Z"
+  },
+  {
+    "id": "944c35cd-1bdc-4779-a4e0-b911d773dbf9",
+    "title": "Fix CORS error",
+    "status": "done",
+    "reminder": "2025-06-14T05:35:40.239557Z",
+    "due_date": "2025-06-21T05:35:40.239557Z",
+    "Repeat": "daily",
+    "note": "Ensure frontend can access backend endpoints.",
+    "updated_at": "2025-06-20T16:35:40.239557Z"
+  },
+  {
+    "id": "114efe4a-7a26-41c0-a59b-2edd80801926",
+    "title": "Clean up unused dependencies",
+    "status": "done",
+    "reminder": "2025-06-12T14:35:40.239769Z",
+    "due_date": "2025-06-13T14:35:40.239769Z",
+    "Repeat": "daily",
+    "note": "Remove packages not used in production.",
+    "updated_at": "2025-06-11T04:35:40.239769Z"
+  },
+  {
+    "id": "f78d23bf-9593-4c36-b847-ffc09ee8c482",
+    "title": "Run Lighthouse audit",
+    "status": "done",
+    "reminder": "2025-06-12T21:35:40.239864Z",
+    "due_date": "2025-06-18T21:35:40.239864Z",
+    "Repeat": "weekly",
+    "note": "Check performance, accessibility, and best practices.",
+    "updated_at": "2025-06-16T14:35:40.239864Z"
+  },
+  {
+    "id": "39c1962c-f71b-4c34-bdeb-654badeb96d8",
+    "title": "Create modal component",
+    "status": "in progress",
+    "reminder": "2025-06-15T10:35:40.239931Z",
+    "due_date": "2025-06-19T10:35:40.239931Z",
+    "Repeat": "weekly",
+    "note": "Reusable modal with animations and backdrop.",
+    "updated_at": "2025-06-18T10:35:40.239931Z"
+  },
+  {
+    "id": "39c75d23-5ee2-4a84-b301-38c7e000636b",
+    "title": "Add search filter to task list",
+    "status": "in progress",
+    "reminder": "2025-06-12T11:35:40.239998Z",
+    "due_date": "2025-06-17T11:35:40.239998Z",
+    "Repeat": "yearly",
+    "note": "Support real-time filtering with debounce.",
+    "updated_at": "2025-06-16T11:35:40.239998Z"
+  },
+  {
+    "id": "cf1e8d53-6c31-4cef-a103-c87a130d31fb",
+    "title": "Schedule weekly backup",
+    "status": "draft",
+    "reminder": "2025-06-12T20:35:40.240064Z",
+    "due_date": "2025-06-13T20:35:40.240064Z",
+    "Repeat": "daily",
+    "note": "Automate database backup every Friday.",
+    "updated_at": "2025-06-12T22:35:40.240064Z"
+  },
+  {
+    "id": "3f33adbc-88a5-4f67-b27a-1da12eb44c41",
+    "title": "Setup Docker for local dev",
+    "status": "draft",
+    "reminder": "2025-06-14T13:35:40.240125Z",
+    "due_date": "2025-06-17T13:35:40.240125Z",
+    "Repeat": "daily",
+    "note": "Add Dockerfile and docker-compose config.",
+    "updated_at": "2025-06-14T13:35:40.240125Z"
+  },
+  {
+    "id": "37a5be2b-4c11-4bc6-aae9-820c92d5ecbe",
+    "title": "Fix z-index issue in header",
+    "status": "in progress",
+    "reminder": "2025-06-15T05:35:40.240184Z",
+    "due_date": "2025-06-22T05:35:40.240184Z",
+    "Repeat": "monthly",
+    "note": "Dropdown overlaps with sidebar.",
+    "updated_at": "2025-06-19T15:35:40.240184Z"
+  },
+  {
+    "id": "8b82c340-52a3-4e13-8547-b31a185adde9",
+    "title": "Add animation on page load",
+    "status": "done",
+    "reminder": "2025-06-14T10:35:40.240292Z",
+    "due_date": "2025-06-20T10:35:40.240292Z",
+    "Repeat": "weekly",
+    "note": "Use framer-motion for smoother UX.",
+    "updated_at": "2025-06-19T15:35:40.240292Z"
+  },
+  {
+    "id": "06ecff9a-e901-4e56-a804-f32d1c27711c",
+    "title": "Implement role-based access",
+    "status": "in progress",
+    "reminder": "2025-06-14T08:35:40.240410Z",
+    "due_date": "2025-06-17T08:35:40.240410Z",
+    "Repeat": "yearly",
+    "note": "Only admins can view dashboard stats.",
+    "updated_at": "2025-06-15T23:35:40.240410Z"
+  },
+  {
+    "id": "588d5570-4463-46da-a93e-b8e1101a71c9",
+    "title": "Migrate data to new schema",
+    "status": "done",
+    "reminder": "2025-06-15T00:35:40.240477Z",
+    "due_date": "2025-06-22T00:35:40.240477Z",
+    "Repeat": "yearly",
+    "note": "Write script for production migration.",
+    "updated_at": "2025-06-20T21:35:40.240477Z"
+  },
+  {
+    "id": "cf1a85d3-732d-4e48-9645-b06ac6b9fd1a",
+    "title": "Add Google Analytics",
+    "status": "in progress",
+    "reminder": "2025-06-12T04:35:40.240540Z",
+    "due_date": "2025-06-18T04:35:40.240540Z",
+    "Repeat": "daily",
+    "note": "Track user sessions and page views.",
+    "updated_at": "2025-06-17T19:35:40.240540Z"
+  },
+  {
+    "id": "190e3c5e-1d6c-430f-ab2a-2560bdcc44f9",
+    "title": "Update user profile page",
+    "status": "in progress",
+    "reminder": "2025-06-13T17:35:40.240599Z",
+    "due_date": "2025-06-20T17:35:40.240599Z",
+    "Repeat": "weekly",
+    "note": "Include avatars and editable bio section.",
+    "updated_at": "2025-06-19T15:35:40.240599Z"
+  },
+  {
+    "id": "20b7be0c-1514-43e0-acfc-76d5e9c96ff3",
+    "title": "Push hotfix for critical bug",
+    "status": "done",
+    "reminder": "2025-06-14T18:35:40.240806Z",
+    "due_date": "2025-06-16T18:35:40.240806Z",
+    "Repeat": "monthly",
+    "note": "Production bug fix needed ASAP.",
+    "updated_at": "2025-06-16T02:35:40.240806Z"
+  },
+  {
+    "id": "7a33ed37-35b0-4c49-bde9-f5314912bb13",
+    "title": "Configure CI/CD pipeline",
+    "status": "in progress",
+    "reminder": "2025-06-13T08:35:40.240884Z",
+    "due_date": "2025-06-14T08:35:40.240884Z",
+    "Repeat": "monthly",
+    "note": "Automate testing and deployment steps.",
+    "updated_at": "2025-06-13T03:35:40.240884Z"
+  },
+  {
+    "id": "b16dd49d-6220-40f4-a61f-348ee30bc4ba",
+    "title": "Improve accessibility",
+    "status": "done",
+    "reminder": "2025-06-14T12:35:40.240948Z",
+    "due_date": "2025-06-18T12:35:40.240948Z",
+    "Repeat": "yearly",
+    "note": "Ensure screen reader support for form fields.",
+    "updated_at": "2025-06-17T06:35:40.240948Z"
+  },
+  {
+    "id": "5533ad0b-ad11-4f70-9d6c-d4028a36523d",
+    "title": "Check email deliverability",
+    "status": "draft",
+    "reminder": "2025-06-14T19:35:40.241012Z",
+    "due_date": "2025-06-18T19:35:40.241012Z",
+    "Repeat": "monthly",
+    "note": "Test SMTP and verify DNS settings.",
+    "updated_at": "2025-06-17T16:35:40.241012Z"
+  },
+  {
+    "id": "9cefa539-fb84-465f-8aad-a90a8864a479",
+    "title": "Run tests on edge cases",
+    "status": "draft",
+    "reminder": "2025-06-13T09:35:40.241073Z",
+    "due_date": "2025-06-20T09:35:40.241073Z",
+    "Repeat": "weekly",
+    "note": "Cover unexpected user inputs.",
+    "updated_at": "2025-06-19T00:35:40.241073Z"
+  },
+  {
+    "id": "6b2ce8e7-1e0b-4265-8568-0b9e09efd40c",
+    "title": "Fix alignment on signup form",
+    "status": "in progress",
+    "reminder": "2025-06-15T05:35:40.241132Z",
+    "due_date": "2025-06-18T05:35:40.241132Z",
+    "Repeat": "monthly",
+    "note": "Misaligned fields on small screens.",
+    "updated_at": "2025-06-17T15:35:40.241132Z"
+  },
+  {
+    "id": "ff8a34ea-02c0-400b-bac3-cd2cb17f42c2",
+    "title": "Create dynamic sitemap.xml",
+    "status": "draft",
+    "reminder": "2025-06-13T07:35:40.241194Z",
+    "due_date": "2025-06-19T07:35:40.241194Z",
+    "Repeat": "yearly",
+    "note": "Automatically update sitemap on deploy.",
+    "updated_at": "2025-06-18T22:35:40.241194Z"
+  },
+  {
+    "id": "ce80de5c-93d6-4443-a45b-1c793e014b79",
+    "title": "Sync with backend team",
+    "status": "done",
+    "reminder": "2025-06-13T23:35:40.241276Z",
+    "due_date": "2025-06-17T23:35:40.241276Z",
+    "Repeat": "yearly",
+    "note": "Align task priorities for upcoming sprint.",
+    "updated_at": "2025-06-17T04:35:40.241276Z"
+  }
+]
