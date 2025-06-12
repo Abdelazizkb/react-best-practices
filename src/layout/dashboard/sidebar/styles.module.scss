@@ -46,6 +46,7 @@
 
 .sidebarContainer {
   height: 100%;
+  display: flex;
   .sidebar {
     height: 100%;
     width: 245px;
@@ -201,5 +202,10 @@
         display: none;
       }
     }
+  }
+  .mainContainer {
+    flex: 1;
+    height: 100%;
+    padding: var(--size-2) 0;
   }
 }

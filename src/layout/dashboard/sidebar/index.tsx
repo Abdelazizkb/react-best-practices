@@ -179,7 +179,7 @@ const Sidebar: React.FC<PropsWithChildren<{ currentLink: ILink }>> = ({
           </div>
         </div>
       </div>
-      {children}
+      <div className={styles.mainContainer}>{children}</div>
     </div>
   );
 };
