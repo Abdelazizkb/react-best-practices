@@ -1,4 +1,3 @@
-import React from "react";
 import Chart from "react-apexcharts";
 import styles from "./styles.module.scss";
 import Card from "./card";
@@ -50,7 +49,8 @@ const DashboardStatistics = () => {
         <Card>
           <h3 className={styles.chartTitle}>Tasks by Status</h3>
           <Chart
-            options={barChartOptions}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            options={barChartOptions as any}
             series={barChartSeries}
             type="bar"
             height={300}
@@ -59,7 +59,8 @@ const DashboardStatistics = () => {
         <Card>
           <h3 className={styles.chartTitle}>Daily Task Completion</h3>
           <Chart
-            options={lineChartOptions}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            options={lineChartOptions as any}
             series={lineChartSeries}
             type="line"
             height={300}
