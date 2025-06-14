@@ -10,6 +10,7 @@ interface Props
   color?: "primary" | "blue" | "sky";
   disabled?: boolean;
   loading?: boolean;
+  rounded?: boolean;
   startIcon?: ReactNode;
   children?: ReactNode;
 }
@@ -25,6 +26,7 @@ const Button: React.FC<Props> = ({
   variant = "default",
   size = "default",
   disabled = false,
+  rounded = false,
   loading = false,
   startIcon,
   children,
@@ -37,6 +39,7 @@ const Button: React.FC<Props> = ({
         [styles[`button--variant-${variant}`]]: true,
         [styles[`button--size-${size}`]]: true,
         [styles[`button--disabled`]]: disabled,
+        [styles[`button--rounded`]]: rounded,
       })}
       {...props}
     >
