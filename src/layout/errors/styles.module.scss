@@ -1,0 +1,32 @@
+.container {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .background {
+    color: var(--gray-200);
+    font: var(--font-heading-bold-1);
+    font-size: 365px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    font: var(--font-heading-medium-3);
+    gap: var(--size-4);
+
+    > button {
+      margin-top: var(--size-6);
+    }
+  }
+}
