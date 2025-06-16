@@ -14,21 +14,12 @@ import { useState, type PropsWithChildren, type ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "components";
 
-type ILink =
-  | "home"
-  | "settings"
-  | "help"
-  | "starred"
-  | "trash"
-  | "all"
-  | "subscription";
-
 type Props = {
-  name: ILink;
-  currentLink: ILink;
+  name: string;
+  currentLink: string;
 };
 
-type IGroup = { name: ILink; title: string; icon: ReactNode }[];
+type IGroup = { name: string; title: string; icon: ReactNode }[];
 
 const pages: { name: string; group: IGroup }[] = [
   {
@@ -50,17 +41,17 @@ const pages: { name: string; group: IGroup }[] = [
     name: "Task Manager",
     group: [
       {
-        name: "all",
+        name: "tasks",
         title: "All",
         icon: <TaskIcon />,
       },
       {
-        name: "starred",
+        name: "tasks/starred",
         title: "Starred",
         icon: <StarredIcon />,
       },
       {
-        name: "trash",
+        name: "tasks/trash",
         title: "Trash",
         icon: <TrashIcon />,
       },
@@ -70,17 +61,17 @@ const pages: { name: string; group: IGroup }[] = [
     name: "Note",
     group: [
       {
-        name: "all",
+        name: "notes",
         title: "All",
         icon: <NoteIcon />,
       },
       {
-        name: "starred",
+        name: "notes/starred",
         title: "Starred",
         icon: <StarredIcon />,
       },
       {
-        name: "trash",
+        name: "notes/trash",
         title: "Trash",
         icon: <TrashIcon />,
       },
@@ -103,7 +94,7 @@ const pages: { name: string; group: IGroup }[] = [
   },
 ];
 
-const Sidebar: React.FC<PropsWithChildren<{ currentLink: ILink }>> = ({
+const Sidebar: React.FC<PropsWithChildren<{ currentLink: string }>> = ({
   currentLink,
   children,
 }) => {
