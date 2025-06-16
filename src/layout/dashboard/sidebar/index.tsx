@@ -187,7 +187,7 @@ const Link: React.FC<PropsWithChildren<Props>> = ({
       className={classNames(styles.link, {
         [styles["link--active"]]: name === currentLink,
       })}
-      onClick={() => navigate(name)}
+      onClick={() => navigate(`/dashboard/${name}`)}
     >
       {children}
     </div>
