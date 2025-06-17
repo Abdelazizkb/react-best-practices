@@ -112,6 +112,9 @@
 
           cursor: pointer;
 
+          list-style: none;
+          text-decoration-line: none;
+
           > svg {
             height: var(--size-4);
             fill: var(--gray-500);
