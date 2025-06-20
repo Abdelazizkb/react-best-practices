@@ -41,7 +41,7 @@ const pages: { name: string; group: IGroup }[] = [
     group: [
       {
         name: "tasks",
-        title: "All",
+        title: "tasks/all",
         icon: <TaskIcon />,
       },
       {
@@ -61,7 +61,7 @@ const pages: { name: string; group: IGroup }[] = [
     group: [
       {
         name: "notes",
-        title: "All",
+        title: "notes/all",
         icon: <NoteIcon />,
       },
       {

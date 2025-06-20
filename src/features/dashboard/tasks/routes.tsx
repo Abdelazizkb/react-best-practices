@@ -1,15 +1,15 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import LoginPage from "./login";
 import NoMatch from "layout/errors/no-match";
+import Tasks from ".";
 
-const Router = () => {
+const TasksRouter = () => {
   return (
     <Routes>
-      <Route index element={<Navigate to="login" />} />
-      <Route path="/login" element={<LoginPage />} />
+      <Route index element={<Navigate to="all" />} />
+      <Route path=":scope" element={<Tasks />} />
       <Route path="*" element={<NoMatch />} />
     </Routes>
   );
 };
 
-export default Router;
+export default TasksRouter;
