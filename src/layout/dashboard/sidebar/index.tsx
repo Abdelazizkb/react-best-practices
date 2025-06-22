@@ -11,24 +11,14 @@ import HelpIcon from "assets/icons/help.svg?react";
 import styles from "./styles.module.scss";
 import classNames from "classnames";
 import { useState, type PropsWithChildren, type ReactNode } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button } from "components";
 
-type ILink =
-  | "home"
-  | "settings"
-  | "help"
-  | "starred"
-  | "trash"
-  | "all"
-  | "subscription";
-
 type Props = {
-  name: ILink;
-  currentLink: ILink;
+  name: string;
 };
 
-type IGroup = { name: ILink; title: string; icon: ReactNode }[];
+type IGroup = { name: string; title: string; icon: ReactNode }[];
 
 const pages: { name: string; group: IGroup }[] = [
   {
@@ -50,17 +40,17 @@ const pages: { name: string; group: IGroup }[] = [
     name: "Task Manager",
     group: [
       {
-        name: "all",
-        title: "All",
+        name: "tasks",
+        title: "tasks/all",
         icon: <TaskIcon />,
       },
       {
-        name: "starred",
+        name: "tasks/starred",
         title: "Starred",
         icon: <StarredIcon />,
       },
       {
-        name: "trash",
+        name: "tasks/trash",
         title: "Trash",
         icon: <TrashIcon />,
       },
@@ -70,17 +60,17 @@ const pages: { name: string; group: IGroup }[] = [
     name: "Note",
     group: [
       {
-        name: "all",
-        title: "All",
+        name: "notes",
+        title: "notes/all",
         icon: <NoteIcon />,
       },
       {
-        name: "starred",
+        name: "notes/starred",
         title: "Starred",
         icon: <StarredIcon />,
       },
       {
-        name: "trash",
+        name: "notes/trash",
         title: "Trash",
         icon: <TrashIcon />,
       },
@@ -103,10 +93,7 @@ const pages: { name: string; group: IGroup }[] = [
   },
 ];
 
-const Sidebar: React.FC<PropsWithChildren<{ currentLink: ILink }>> = ({
-  currentLink,
-  children,
-}) => {
+const Sidebar: React.FC<PropsWithChildren> = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
@@ -125,7 +112,7 @@ const Sidebar: React.FC<PropsWithChildren<{ currentLink: ILink }>> = ({
             <div className={styles.group} key={index}>
               {index !== 0 && <p>{page.name}</p>}
               {page?.group.map((link, index) => (
-                <Link currentLink={currentLink} key={index} name={link.name}>
+                <Link key={index} name={link.name}>
                   {link.icon}
                   <p>{link.title}</p>
                 </Link>
@@ -184,22 +171,19 @@ const Sidebar: React.FC<PropsWithChildren<{ currentLink: ILink }>> = ({
   );
 };
 
-const Link: React.FC<PropsWithChildren<Props>> = ({
-  currentLink,
-  name,
-  children,
-}) => {
-  const navigate = useNavigate();
-
+const Link: React.FC<PropsWithChildren<Props>> = ({ name, children }) => {
   return (
-    <div
-      className={classNames(styles.link, {
-        [styles["link--active"]]: name === currentLink,
-      })}
-      onClick={() => navigate(name)}
+    <NavLink
+      className={({ isActive }) =>
+        classNames(styles.link, {
+          [styles["link--active"]]: isActive,
+        })
+      }
+      to={`/dashboard/${name}`}
+      end
     >
       {children}
-    </div>
+    </NavLink>
   );
 };
 

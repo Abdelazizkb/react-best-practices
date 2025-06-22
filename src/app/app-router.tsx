@@ -4,8 +4,8 @@ import NoMatch from "layout/errors/no-match";
 import AuthLayout from "layout/auth";
 import Layout from "layout/dashboard";
 
-const Auth = lazy(() => import("../features/auth"));
-const Dashboard = lazy(() => import("../features/dashboard"));
+const AuthRouter = lazy(() => import("../features/auth/routes"));
+const DashboardRouter = lazy(() => import("../features/dashboard/routes"));
 
 const AppRouter = () => {
   return (
@@ -15,7 +15,7 @@ const AppRouter = () => {
         path="/auth/*"
         element={
           <AuthLayout>
-            <Auth />
+            <AuthRouter />
           </AuthLayout>
         }
       />
@@ -23,7 +23,7 @@ const AppRouter = () => {
         path="/dashboard/*"
         element={
           <Layout>
-            <Dashboard />
+            <DashboardRouter />
           </Layout>
         }
       />
